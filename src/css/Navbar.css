@@ -1,0 +1,31 @@
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.1);
+    height: 60px;
+}
+nav h1{
+    font-size: 30px;
+}
+nav ul{
+    display: flex;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+}
+nav ul li{
+    list-style-type: none;
+    margin: 0px 15px;
+    color: grey;
+}
+.cart{
+    margin-right: 30px;
+}
+.fa-shoppingcart{
+    background-color: grey !important;
+}
+nav img{
+    width: 50%;
+}

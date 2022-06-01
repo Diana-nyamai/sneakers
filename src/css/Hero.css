@@ -76,12 +76,31 @@ ul li img{
 .btn-add{
     display: inline-flex;
     width: 100px;
-    height: 20px;
-    border: 1px solid black;
+    height: 25px;
+    margin-right: 20px;
 }
 
 .add{
     width: 50px;
-    height: 20px;
+    height: 25px;
     padding:0;
+    outline: none;
+    background:#f7f8fd;
+    border: none;
+    font-size: 18px;
+    color: #db7134;
 }
+.add:hover{
+    cursor: pointer;
+}
+.add-to-cart{
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    width: 200px;
+    background-color: #ff7d1b;
+}
+.add-to-cart span{
+    margin-left: 10px;
+}
+

@@ -1,6 +1,7 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 function Hero() {
+ const [number, setNumber] = useState(1);
   return (
     <div>
        <div className='container'>
@@ -28,13 +29,13 @@ function Hero() {
          <p className='discount'>$250</p>
          <div>
           <div className='btn-add'>
-          <button className='add'>+</button>
-          <button className='add'>1</button>
-          <button className='add'>-</button>
+          <button className='add' onClick={() => setNumber(prevstate => prevstate - 1)}>-</button>
+          <button className='add num'>{number}</button>
+          <button className='add' onClick={() => setNumber(prevstate => prevstate + 1)}>+</button>
           </div>
-          <button>
+          <button className='add-to-cart'>
           <i className='fa fa-shopping-cart'></i>
-          add to cart
+            <span>add to cart</span>
           </button>
          </div>
        </div>
